@@ -24,6 +24,15 @@ bool Engine::init() {
 
     TextureManager::getInstance()->load("tree", "assets/textures/trees/tree.png");
 
+    Vector2D v1(1, 2), v2(3, 4);
+    Vector2D v3 = v1 + v2;
+    v3.log("v3: ");
+
+    Transform t1(1, 2);
+    t1.log("t1: ");
+    t1.translate(v3);
+    t1.log("t1: ");
+
     return is_running = true;
 }
 

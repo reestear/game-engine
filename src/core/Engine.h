@@ -11,6 +11,8 @@
 #include "flags.h"
 // Externa header files
 #include "TextureManager.h"
+#include "Transform.h"
+#include "Vector2D.h"
 
 class Engine {
     
