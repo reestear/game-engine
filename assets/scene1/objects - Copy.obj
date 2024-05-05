@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Objects>   
+    <object type="OBJECT" texturID="sun" x="900" y ="0" flip="0" scalex="0.5" scaley="0.5" paralaxFactor="0.08" alpha="0"/>
+    <object type="CLOUD" texturID="cloud" x="800" y ="0" flip="0" scalex="2" scaley="2" paralaxFactor="0.02" alpha="0"/>
+    <object type="CLOUD" texturID="cloud" x="0" y ="80" flip="0" scalex="4" scaley="4" paralaxFactor="0.01" alpha="0"/>   
+    <object type="OBJECT" texturID="montain1" x="-10" y ="400" flip="0" scalex="3" scaley="3" paralaxFactor="0.04" alpha="0"/>    
+    <object type="CLOUD" texturID="cloud2" x="300" y ="0" flip="0" scalex="1" scaley="1" paralaxFactor="0.2" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1000" y="200" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1100" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1200" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1450" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/>
+    <object type="OBJECT" texturID="tree_day" x="1450" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1550" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1650" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="1750" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="2050" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="2450" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/> 
+    <object type="OBJECT" texturID="tree_day" x="2750" y="450" flip="0" scalex="2" scaley="2.5" paralaxFactor="1" alpha="0"/>
+</Objects>
+

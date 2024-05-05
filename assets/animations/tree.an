@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequences>
+    <sequence id="tree" loop="1" frames="4" speed="200">
+        <frame id ="tree1"/>                                                                                    
+        <frame id ="tree2"/>
+        <frame id ="tree3"/>
+        <frame id ="tree4"/>
+    </sequence> 
+</sequences>

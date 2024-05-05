@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation>
+    <sequence id="KNIGHT_IDLE" loop="1" frames="11" speed="80">
+        <frame id ="knight_idle0"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle1"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle2"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle3"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle4"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle5"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle6"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle7"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle8"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle9"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_idle10"/>                                                                                                                                                                                                                                                                                                           
+    </sequence> 
+
+    <sequence id="KNIGHT_RUN" loop="1" frames="8" speed="80">
+        <frame id ="knight_run0"/>                                                                                    
+        <frame id ="knight_run1"/>                                                                                    
+        <frame id ="knight_run2"/>                                                                                    
+        <frame id ="knight_run3"/>                                                                                    
+        <frame id ="knight_run4"/>                                                                                    
+        <frame id ="knight_run5"/>                                                                                                                                    
+        <frame id ="knight_run6"/>                                                                                                                                    
+        <frame id ="knight_run7"/>                                                                                                                                    
+    </sequence>
+
+    <sequence id="KNIGHT_JUMP" loop="1" frames="3" speed="150">
+        <frame id ="knight_jump0"/>                                                                                    
+        <frame id ="knight_jump1"/>                                                                                    
+        <frame id ="knight_jump2"/>                                                                                                                                                                                                                                                                                                         
+    </sequence>
+
+     <sequence id="KNIGHT_FALL" loop="1" frames="3" speed="150">                                                                                  
+        <frame id ="knight_fall0"/>                                                                                    
+        <frame id ="knight_fall1"/>                                                                                    
+        <frame id ="knight_fall2"/>                                                                                                                                                                                                                    
+    </sequence>
+
+    <sequence id="KNIGHT_ATTACK_1" loop="1" frames="7" speed="80">
+        <frame id ="knight_attack1_0"/>                                                                                    
+        <frame id ="knight_attack1_1"/>                                                                                    
+        <frame id ="knight_attack1_2"/>                                                                                    
+        <frame id ="knight_attack1_3"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack1_4"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack1_5"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack1_6"/>                                                                                                                                                                                                                      
+    </sequence>
+
+    <sequence id="KNIGHT_ATTACK_2" loop="1" frames="7" speed="80">
+        <frame id ="knight_attack2_0"/>                                                                                    
+        <frame id ="knight_attack2_1"/>                                                                                    
+        <frame id ="knight_attack2_2"/>                                                                                    
+        <frame id ="knight_attack2_3"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack2_4"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack2_5"/>                                                                                                                                                                                                                      
+        <frame id ="knight_attack2_6"/>                                                                                                                                                                                                                      
+    </sequence>
+
+    <sequence id="KNIGHT_HURT" loop="1" frames="4" speed="100">
+        <frame id ="knight_hurt0"/>                                                                                    
+        <frame id ="knight_hurt1"/>                                                                                    
+        <frame id ="knight_hurt2"/>                                                                                                                                                                                                                                                                                                         
+        <frame id ="knight_hurt3"/>                                                                                                                                                                                                                                                                                                         
+    </sequence>
+
+    <sequence id="KNIGHT_DEATH" loop="1" frames="11" speed="150">
+        <frame id ="knight_death0"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death1"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death2"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death3"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death4"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death5"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death6"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death7"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death8"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death9"/>                                                                                                                                                                                                                                                                                                           
+        <frame id ="knight_death10"/>                                                                                                                                                                                                                                                                                                           
+    </sequence> 
+
+</animation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation>
+    <sequence id="HERO_IDLE" loop="1" frames="4" speed="150">
+        <frame id ="hero_idle0"/>                                                                                    
+        <frame id ="hero_idle1"/>                                                                                    
+        <frame id ="hero_idle2"/>                                                                                    
+        <frame id ="hero_idle3"/>                                                                                                                                                                                                                          
+    </sequence> 
+
+    <sequence id="HERO_RUN" loop="1" frames="6" speed="150">
+        <frame id ="hero_run0"/>                                                                                    
+        <frame id ="hero_run1"/>                                                                                    
+        <frame id ="hero_run2"/>                                                                                    
+        <frame id ="hero_run3"/>                                                                                    
+        <frame id ="hero_run4"/>                                                                                    
+        <frame id ="hero_run5"/>                                                                                                                                    
+    </sequence>
+
+    <sequence id="HERO_JUMP" loop="1" frames="3" speed="150">
+        <frame id ="hero_jump0"/>                                                                                    
+        <frame id ="hero_jump1"/>                                                                                    
+        <frame id ="hero_jump2"/>                                                                                                                                                                                                                                                                                                         
+    </sequence>
+
+     <sequence id="HERO_FALL" loop="1" frames="1" speed="1">                                                                                  
+        <frame id ="hero_jump3"/>                                                                                                                                                                                                                      
+    </sequence>
+
+    <sequence id="HERO_ATTACK_1" loop="1" frames="4" speed="120">
+        <frame id ="hero_attack1_0"/>                                                                                    
+        <frame id ="hero_attack1_1"/>                                                                                    
+        <frame id ="hero_attack1_2"/>                                                                                    
+        <frame id ="hero_attack1_3"/>                                                                                                                                                                                                                      
+    </sequence>
+
+     <sequence id="HERO_ATTACK_2" loop="1" frames="5" speed="120">
+        <frame id ="hero_attack2_0"/>                                                                                    
+        <frame id ="hero_attack2_1"/>                                                                                    
+        <frame id ="hero_attack2_2"/>                                                                                    
+        <frame id ="hero_attack2_3"/>                                                                                                                                                                                                                      
+        <frame id ="hero_attack2_4"/>                                                                                                                                                                                                                      
+    </sequence>
+
+    <sequence id="HERO_ATTACK_3" loop="1" frames="5" speed="120">
+        <frame id ="hero_attack3_0"/>                                                                                    
+        <frame id ="hero_attack3_1"/>                                                                                    
+        <frame id ="hero_attack3_2"/>                                                                                    
+        <frame id ="hero_attack3_3"/>                                                                                                                                                                                                                      
+        <frame id ="hero_attack3_4"/>                                                                                                                                                                                                                      
+    </sequence>
+
+    <sequence id="HERO_HURT" loop="1" frames="3" speed="200">
+        <frame id ="hero_hurt0"/>                                                                                    
+        <frame id ="hero_hurt1"/>                                                                                    
+        <frame id ="hero_hurt2"/>                                                                                                                                                                                                                                                                                                         
+    </sequence>
+
+</animation>

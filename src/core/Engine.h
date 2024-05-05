@@ -9,6 +9,8 @@
 // Constants and flags
 #include "constants.h"
 #include "flags.h"
+// Externa header files
+#include "TextureManager.h"
 
 class Engine {
     
