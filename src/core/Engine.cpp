@@ -1,7 +1,9 @@
 #include "Engine.h"
+#include "Warrior.h"
 
 // Define the static member variable 'instance'
 Engine* Engine::instance = nullptr;
+Warrior* player = nullptr;
 
 bool Engine::init() {
 
@@ -22,16 +24,9 @@ bool Engine::init() {
         return false;
     }
 
-    TextureManager::getInstance()->load("tree", "assets/textures/trees/tree.png");
-
-    Vector2D v1(1, 2), v2(3, 4);
-    Vector2D v3 = v1 + v2;
-    v3.log("v3: ");
-
-    Transform t1(1, 2);
-    t1.log("t1: ");
-    t1.translate(v3);
-    t1.log("t1: ");
+    // TextureManager::getInstance()->load("tree", "assets/textures/trees/tree.png");
+    TextureManager::getInstance()->load("player", "assets/lessons/Idle.png");
+    player = new Warrior(new Properties("player", 136, 96, 100, 200, SDL_FLIP_NONE));
 
     return is_running = true;
 }
@@ -51,14 +46,15 @@ void Engine::quit() {
 }
 
 void Engine::update() {
-    // std::cout << "Updating" << std::endl;
+    player->update(0.0f);
 }
 
 void Engine::render() {
     SDL_SetRenderDrawColor(renderer, 60, 125, 43, 255);
     SDL_RenderClear(renderer);
 
-    TextureManager::getInstance()->draw("tree", 100, 100, 347, 465);
+    // TextureManager::getInstance()->draw("player", 100, 100, 347, 465);
+    player->draw();
 
     SDL_RenderPresent(renderer);
 }

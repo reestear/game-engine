@@ -11,6 +11,11 @@ class Transform {
 
         Transform(float x=0, float y = 0) : x(x), y(y) {}
 
+        inline float getX() { return x; }
+        inline float getY() { return y; }
+        inline float getRotation() { return rotation; }
+        inline float getScale() { return scale; }
+        
         inline void setX(float x) { this->x = x; }
         inline void setY(float y) { this->y = y; }
         inline void setRotation(float rotation) { this->rotation = rotation; }

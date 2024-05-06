@@ -1,6 +1,7 @@
 #ifndef TEXTURE_MANAGER_H
 #define TEXTURE_MANAGER_H
 
+#include <iostream>
 #include <string>
 #include <SDL2/SDL.h>
 #include <map>
@@ -20,6 +21,7 @@ class TextureManager {
         void clean();
 
         void draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip = SDL_FLIP_NONE);
+        void drawFrame(std::string id, int x, int y, int width, int height, int current_row, int current_frame, SDL_RendererFlip flip = SDL_FLIP_NONE);
 
     private:
         TextureManager() {}

@@ -5,6 +5,7 @@
 #include "IObject.h"
 #include "Transform.h"
 #include <string>
+#include "TextureManager.h"
 
 struct Properties {
     std::string texture_id;
@@ -36,7 +37,10 @@ class GameObject : public IObject {
 
         virtual void draw() = 0;
         virtual void update(float dt) = 0;
-        virtual void clean() = 0;
+        virtual void clean() {
+            delete transform;
+            TextureManager::getInstance()->drop(texture_id);
+        };
 
     protected:
         Transform *transform;

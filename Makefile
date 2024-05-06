@@ -1,12 +1,15 @@
 SRC_DIR = src
 
-SRC_ENTRIES = $(wildcard $(SRC_DIR)/*)
+SRC_ENTRIES = $(shell find $(SRC_DIR) -type d)
 SRC_SUBDIRS = $(filter-out $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/*.h),$(SRC_ENTRIES))
+# SRC_SUBDIRS := $(sort $(dir $(shell find $(SRC_DIR) -type d)))
 
 BUILD_DIR = build
 DEBUG_DIR = $(BUILD_DIR)/debug
 CC = g++
-SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/core/*.cpp) $(wildcard $(SRC_DIR)/graphics/*.cpp)
+# SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/core/*.cpp) $(wildcard $(SRC_DIR)/graphics/*.cpp)
+# SRC_FILES = $(shell find $(SRC_DIR) -name "*.cpp")
+SRC_FILES = $(shell find $(SRC_DIR) -type f \( -name '*.h' -o -name '*.cpp' \))
 OBJ_NAME = play
 INCLUDE_PATHS = $(addprefix -I,$(SRC_SUBDIRS)) -Iinclude -Iinclude/SDL2/ -Iinclude/SDL2_image/ -Iinclude/SDL2_ttf/
 LIBRARY_PATHS = -L/opt/homebrew/Cellar/sdl2/2.30.3/lib/ -L/opt/homebrew/Cellar/sdl2_image/2.8.2_1/lib -L/opt/homebrew/Cellar/sdl2_ttf/2.22.0/lib

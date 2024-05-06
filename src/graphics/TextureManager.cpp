@@ -30,6 +30,13 @@ void TextureManager::draw(std::string id, int x, int y, int width, int height, S
     SDL_RenderCopyEx(Engine::getInstance()->getRenderer(), texture_map[id], &src_rect, &dst_rect, 0, nullptr, flip);
 }
 
+void TextureManager::drawFrame(std::string id, int x, int y, int width, int height, int current_row, int current_frame, SDL_RendererFlip flip) {
+    SDL_Rect src_rect = {width * current_frame, height * current_row, width, height};
+    SDL_Rect dst_rect = {x, y, width, height};
+
+    SDL_RenderCopyEx(Engine::getInstance()->getRenderer(), texture_map[id], &src_rect, &dst_rect, 0, nullptr, flip);
+}
+
 void TextureManager::drop(std::string id) {
     SDL_DestroyTexture(texture_map[id]);
     texture_map.erase(id);
