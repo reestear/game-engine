@@ -29,10 +29,9 @@ class GameObject : public IObject {
         GameObject(Properties *props) : 
             width(props->width), 
             height(props->height), 
-            texture_id(props->texture_id), 
-            flip(props->flip) 
+            texture_id(props->texture_id)
         {
-            transform = new Transform(props->x, props->y);
+            transform = new Transform(props->x, props->y, props->flip);
         }
 
         virtual void draw() = 0;
@@ -46,8 +45,7 @@ class GameObject : public IObject {
         Transform *transform;
         int width, height;
         std::string texture_id;
-        SDL_RendererFlip flip;
-
+        
 };
 
 #endif

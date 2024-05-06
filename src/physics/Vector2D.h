@@ -12,8 +12,8 @@ class Vector2D {
         inline float getX() { return x; }
         inline float getY() { return y; }
 
-        void setX(float x) { this->x = x; }
-        void setY(float y) { this->y = y; }
+        inline void setX(float x) { this->x = x; }
+        inline void setY(float y) { this->y = y; }
 
         inline Vector2D operator+(const Vector2D& v2) const {
             return Vector2D(x + v2.x, y + v2.y);

@@ -2,18 +2,15 @@
 
 Warrior::Warrior(Properties *props) : Character(props) {
     character_name = "warrior";
-    row = 0;
-    frame = 0;
-    frameCount = 6;
-    animationSpeed = 60;
+    animation->setProperties(texture_id, 0, 0, 60, 6);
 }
 
 void Warrior::draw() {
-   TextureManager::getInstance()->drawFrame(texture_id, transform->getX(), transform->getY(), width, height, row, frame, flip); 
+    animation->draw(transform, width, height);
 }
 
 void Warrior::update(float dt) {
-    frame = (SDL_GetTicks() / animationSpeed) % frameCount;
+    animation->update();
 }
 
 void Warrior::clean() {

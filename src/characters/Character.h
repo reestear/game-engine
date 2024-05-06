@@ -2,12 +2,15 @@
 #define CHARACTER_H
 
 #include "GameObject.h"
+#include "Animation.h"
 #include <string>
 
 class Character : public GameObject {
     
     public:
-        Character(Properties *props) : GameObject(props) {}
+        Character(Properties *props) : GameObject(props) {
+            animation = new Animation();
+        }
 
         virtual void draw() = 0;
         virtual void update(float dt) = 0;
@@ -16,9 +19,8 @@ class Character : public GameObject {
         };
 
     protected:
+        Animation *animation;
         std::string character_name;
-        int row, frame, frameCount;
-        int animationSpeed;
 
 };
 
