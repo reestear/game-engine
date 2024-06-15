@@ -1,6 +1,14 @@
 #include "Engine.h"
 #include "Warrior.h"
 
+// Constants and flags
+#include "constants.h"
+#include "flags.h"
+// Externa header files
+#include "TextureManager.h"
+#include "Transform.h"
+#include "Vector2D.h"
+
 // Define the static member variable 'instance'
 Engine* Engine::instance = nullptr;
 Warrior* player = nullptr;

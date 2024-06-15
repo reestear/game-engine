@@ -1,10 +1,9 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
-#include <SDL.h>
+#include "pch.h"
 #include "IObject.h"
 #include "Transform.h"
-#include <string>
 #include "TextureManager.h"
 
 struct Properties {

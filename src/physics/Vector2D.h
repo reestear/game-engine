@@ -1,13 +1,12 @@
 #ifndef VECTOR2D_H
 #define VECTOR2D_H
 
-#include <string>
-#include <iostream>
+#include "pch.h"
 
 class Vector2D {
 
     public:
-        Vector2D(float x, float y) : x(x), y(y) {}
+        Vector2D(float x = 0, float y = 0) : x(x), y(y) {}
 
         inline float getX() { return x; }
         inline float getY() { return y; }

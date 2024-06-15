@@ -1,11 +1,9 @@
 #ifndef WARRIOR_H
 #define WARRIOR_H
 
-#include <iostream>
 #include "Character.h"
-#include "TextureManager.h"
-#include <SDL2/SDL.h>
-#include "GameObject.h"
+
+struct Properties;
 
 class Warrior : public Character {
     

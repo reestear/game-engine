@@ -1,18 +1,10 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-// I don't know why this is necessary, but it is.
-#include <iostream>
 // SDL2 and SDL2_Image
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
-// Constants and flags
-#include "constants.h"
-#include "flags.h"
-// Externa header files
-#include "TextureManager.h"
-#include "Transform.h"
-#include "Vector2D.h"
+// #include <SDL2/SDL.h>
+// #include <SDL2_image/SDL_image.h>
+#include "pch.h"
 
 class Engine {
     

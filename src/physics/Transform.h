@@ -2,9 +2,7 @@
 #define TRANSFORM_H
 
 #include "Vector2D.h"
-#include <string>
-#include <iostream>
-#include "SDL2/SDL.h"
+#include "pch.h"
 
 class Transform {
 
@@ -17,6 +15,8 @@ class Transform {
         inline SDL_RendererFlip getFlip() { return flip; }
         inline float getScale() { return scale; }
         
+        inline void set(Transform *transform) { x = transform->getX(); y = transform->getY(); flip = transform->getFlip(); scale = transform->getScale(); }
+        inline void setPosition(Vector2D position) { x = position.getX(); y = position.getY(); }
         inline void setX(float x) { this->x = x; }
         inline void setY(float y) { this->y = y; }
         inline void setFlip(SDL_RendererFlip flip) { this->flip = flip; }

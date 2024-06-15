@@ -13,7 +13,7 @@ SRC_FILES = $(shell find $(SRC_DIR) -type f \( -name '*.h' -o -name '*.cpp' \))
 OBJ_NAME = play
 INCLUDE_PATHS = $(addprefix -I,$(SRC_SUBDIRS)) -Iinclude -Iinclude/SDL2/ -Iinclude/SDL2_image/ -Iinclude/SDL2_ttf/
 LIBRARY_PATHS = -L/opt/homebrew/Cellar/sdl2/2.30.3/lib/ -L/opt/homebrew/Cellar/sdl2_image/2.8.2_1/lib -L/opt/homebrew/Cellar/sdl2_ttf/2.22.0/lib
-COMPILER_FLAGS = -std=c++11 -Wall -O0 -g
+COMPILER_FLAGS = -std=c++11 -Wall -O0 -O2 -g
 LINKER_FLAGS = -lsdl2 -lsdl2_image -lsdl2_ttf
 
 build-dev:

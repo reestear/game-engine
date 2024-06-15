@@ -3,13 +3,15 @@
 
 #include "GameObject.h"
 #include "Animation.h"
-#include <string>
+#include "RigidBody.h"
+#include "pch.h"
 
 class Character : public GameObject {
     
     public:
         Character(Properties *props) : GameObject(props) {
             animation = new Animation();
+            rigid_body = new RigidBody();
         }
 
         virtual void draw() = 0;
@@ -20,6 +22,7 @@ class Character : public GameObject {
 
     protected:
         Animation *animation;
+        RigidBody *rigid_body;
         std::string character_name;
 
 };

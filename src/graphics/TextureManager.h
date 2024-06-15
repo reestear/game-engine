@@ -1,11 +1,7 @@
 #ifndef TEXTURE_MANAGER_H
 #define TEXTURE_MANAGER_H
 
-#include <iostream>
-#include <string>
-#include <SDL2/SDL.h>
-#include <map>
-#include "Engine.h"
+#include "pch.h"
 
 class TextureManager {
     public:

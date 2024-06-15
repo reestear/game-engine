@@ -1,5 +1,7 @@
 #include "Animation.h"
 #include "TextureManager.h"
+#include "SDL2/SDL.h"
+#include "Transform.h"
 
 Animation::Animation() : sprite_row(0), sprite_frame(0), animation_speed(0), frame_count(0) {}
 

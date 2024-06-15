@@ -1,9 +1,9 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-#include "SDL2/SDL.h"
-#include "Transform.h"
-#include <string>
+#include "pch.h"
+
+class Transform;
 
 class Animation {
 
