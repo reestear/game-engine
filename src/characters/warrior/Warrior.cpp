@@ -1,13 +1,11 @@
 #include "Warrior.h"
-#include <iostream>
 #include "TextureManager.h"
-#include <SDL2/SDL.h>
 #include "GameObject.h"
+#include "Input.h"
 
 Warrior::Warrior(Properties *props) : Character(props) {
     character_name = "warrior";
-    animation->setProperties(texture_id, 0, 0, 60, 6);
-    
+    animation->setProperties(texture_id, 0, 0, 60, 8);
 }
 
 void Warrior::draw() {
@@ -15,10 +13,30 @@ void Warrior::draw() {
 }
 
 void Warrior::update(float dt) {
+
+    animation->setProperties("player", 0, 0, 60, 6);
+    rigid_body->unsetForce();
+
+    if(Input::getInstance()->isKeyDown(SDL_SCANCODE_A)) {
+        animation->setProperties("player_run", 0, 0, 60, 8);
+        rigid_body->applyForceX(10000.f*LEFT);
+        // transform->setX(transform->getX() + 100.f * dt * LEFT);
+        transform->setFlip(SDL_FLIP_HORIZONTAL);
+    }
+
+    if(Input::getInstance()->isKeyDown(SDL_SCANCODE_D)) {
+        animation->setProperties("player_run", 0, 0, 60, 8);
+        rigid_body->applyForceX(10000.f*RIGHT);
+        // transform->setX(transform->getX() + 100.f * dt * RIGHT);
+        transform->setFlip(SDL_FLIP_NONE);
+    }
+
     animation->update();
-    rigid_body->applyForceX(5.f);
-    rigid_body->update(0.4f);
-    transform->setPosition(rigid_body->getPosition());
+    rigid_body->update(dt);
+
+    // transform->setPosition(rigid_body->getPosition());
+    // Moving only in X diretion without falling down
+    transform->setX(rigid_body->getPosition().getX());
 }
 
 void Warrior::clean() {

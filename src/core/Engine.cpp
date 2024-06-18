@@ -9,6 +9,9 @@
 #include "Transform.h"
 #include "Vector2D.h"
 
+#include "Input.h"
+#include "Timer.h"
+
 // Define the static member variable 'instance'
 Engine* Engine::instance = nullptr;
 Warrior* player = nullptr;
@@ -33,7 +36,9 @@ bool Engine::init() {
     }
 
     // TextureManager::getInstance()->load("tree", "assets/textures/trees/tree.png");
-    TextureManager::getInstance()->load("player", "assets/lessons/Idle.png");
+    TextureManager::getInstance()->load("player", "../../assets/lessons/Idle.png");
+    TextureManager::getInstance()->load("player_run", "../../assets/lessons/Run.png");
+
     player = new Warrior(new Properties("player", 136, 96, 100, 200, SDL_FLIP_NONE));
 
     return is_running = true;
@@ -53,8 +58,16 @@ void Engine::quit() {
     is_running = false;
 }
 
+float prev_t = SDL_GetTicks();
+
 void Engine::update() {
-    player->update(0.0f);
+    float dt = Timer::getInstance()->getDeltaTime();
+
+    if(prev_t + 1000 < SDL_GetTicks()) {
+        SDL_Log("Delta time: %f", dt);
+        prev_t = SDL_GetTicks();
+    }
+    player->update(dt);
 }
 
 void Engine::render() {
@@ -68,14 +81,5 @@ void Engine::render() {
 }
 
 void Engine::events() {
-    SDL_Event event;
-    SDL_PollEvent(&event);
-
-    switch(event.type){
-        case SDL_QUIT:
-            quit();
-            break;
-        default:
-            break;
-    }
+    Input::getInstance()->listen();
 }

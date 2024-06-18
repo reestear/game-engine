@@ -1,9 +1,6 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-// SDL2 and SDL2_Image
-// #include <SDL2/SDL.h>
-// #include <SDL2_image/SDL_image.h>
 #include "pch.h"
 
 class Engine {
