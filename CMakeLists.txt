@@ -5,13 +5,16 @@ project(GameEngine)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-option(ENABLED_PCH "Enable Precompiled Headers" ON)
+set(ENABLED_PCH ON)
 
-function(engine_target_precompile_headers)
-    if (ENABLED_PCH)
-        target_precompile_headers(${ARGV})
-    endif()
-endfunction()
+# Not Working function :/
+# function(engine_target_precompile_headers ARGV)
+#     message(STATUS "ARGV: ${ARGV}")
+#     if(ENABLED_PCH)
+#         message(STATUS "Precompiling headers for target: ${ARGV}")
+#         target_precompile_headers(${ARGV})
+#     endif()
+# endfunction()
 
 # Set source directory
 set(SRC_DIR ${CMAKE_SOURCE_DIR}/src)
@@ -60,7 +63,9 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES} ${SDL2_TTF_LIBRARIES})
 
 # Set PCH
-engine_target_precompile_headers(${PROJECT_NAME} PRIVATE ${INCLUDE_DIR}/pch.h)
+if(ENABLED_PCH)
+    target_precompile_headers(${PROJECT_NAME} PRIVATE ${INCLUDE_DIR}/pch.h)
+endif()
 
 message(STATUS "Output directory: ${OUT_DIR}")
 
