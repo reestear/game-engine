@@ -36,8 +36,8 @@ bool Engine::init() {
     }
 
     // TextureManager::getInstance()->load("tree", "assets/textures/trees/tree.png");
-    TextureManager::getInstance()->load("player", "../../assets/lessons/Idle.png");
-    TextureManager::getInstance()->load("player_run", "../../assets/lessons/Run.png");
+    TextureManager::getInstance()->load("player", "../../assets/Characters/Warrior/WarriorIdle.png");
+    TextureManager::getInstance()->load("player_run", "../../assets/Characters/Warrior/WarriorRun.png");
 
     player = new Warrior(new Properties("player", 136, 96, 100, 200, SDL_FLIP_NONE));
 
