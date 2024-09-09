@@ -1,0 +1,149 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "legacy-fantasy/map/level-1-map.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 0.25,
+            "scaleInEditor": 1
+        },
+        "Level-1/Backgrounds.xml": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "Level-1/Decorations.xml": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.5
+        },
+        "Level-1/longx600map.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1006.0606060606062,
+                "y": 212.12121212121212
+            }
+        },
+        "Level-1/longx600map.tmx#oak_woods_tileset": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "MyMap/mymap.tmx": {
+            "scale": 0.3725,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 963.758389261745,
+                "y": 467.1140939597317
+            }
+        },
+        "MyMap/mymap.tmx#Hive": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1
+        },
+        "legacy-fantasy/map/Background.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "legacy-fantasy/map/Background.xml": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "legacy-fantasy/map/Backgrounds.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "legacy-fantasy/map/Backgrounds.xml": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.5
+        },
+        "legacy-fantasy/map/bgs.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "legacy-fantasy/map/level-1-map.tmx": {
+            "expandedObjectLayers": [
+                12
+            ],
+            "scale": 0.33,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 687.8787878787879,
+                "y": 390.909090909091
+            }
+        },
+        "legacy-fantasy/map/level-1-map.tmx#Hive": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.1051,
+            "scaleInEditor": 1
+        },
+        "legacy-fantasy/map/level-1-map.tmx#background": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.5
+        },
+        "legacy-fantasy/map/level-1-map.tmx#mock": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.25
+        },
+        "legacy-fantasy/map/level-1-map.tmx#some": {
+            "dynamicWrapping": true,
+            "scaleInDock": 0.4633
+        },
+        "legacy-fantasy/map/level-1-map.tmx#trees": {
+            "dynamicWrapping": false,
+            "scaleInDock": 0.4407
+        },
+        "legacy-fantasy/map/level-1.tmx": {
+            "scale": 0.9648,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 135.7794361525705,
+                "y": 133.70646766169153
+            }
+        },
+        "legacy-fantasy/map/level-1.tmx#Buildings": {
+            "scaleInDock": 0.5
+        },
+        "legacy-fantasy/map/level-1.tmx#Hive": {
+            "scaleInDock": 2.2684
+        }
+    },
+    "last.externalTilesetPath": "/Users/ruslahn.q/Projects/game-engine/assets/Maps/legacy-fantasy/map",
+    "last.imagePath": "/Users/ruslahn.q/Desktop/game assets/legacy fantasy/Legacy-Fantasy - High Forest 2.3/Background",
+    "map.height": 60,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 120,
+    "openFiles": [
+        "Level-1/longx600map.tmx",
+        "legacy-fantasy/map/level-1-map.tmx"
+    ],
+    "project": "legacy-fantasy.tiled-project",
+    "property.type": "float",
+    "recentFiles": [
+        "Level-1/longx600map.tmx",
+        "legacy-fantasy/map/level-1-map.tmx",
+        "MyMap/mymap.tmx",
+        "legacy-fantasy/map/Backgrounds.tsx",
+        "legacy-fantasy/map/Background.xml",
+        "legacy-fantasy/map/bgs.tsx",
+        "legacy-fantasy/map/Background.tsx",
+        "legacy-fantasy/map/level-1.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.type": 1
+}

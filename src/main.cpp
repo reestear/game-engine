@@ -1,5 +1,5 @@
 #include "Engine.h"
-#include "Timer.h"
+#include "Timestamp.h"
 
 int main(int argc, char* argv[]) {
 
@@ -10,10 +10,15 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
+    Timestamp *timestamp = Timestamp::getInstance();
+    timestamp->setLogTimeEnabled();
+
     while(engine->isRunning()) {
-        Timer::getInstance()->tick();
+        timestamp->tick();
+        float dt = timestamp->getDeltaTime();
+
         engine->events();
-        engine->update();
+        engine->update(dt);
         engine->render();
     }
 
